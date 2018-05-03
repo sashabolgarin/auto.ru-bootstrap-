@@ -313,6 +313,8 @@ header .button {
 .mc_item {
 	border: 1px solid #353535;
 	text-align: center;
+	font-family: "BebasRegular";
+	font-style: 20px;
 }
 
 .mc_item_wrap {
@@ -338,4 +340,71 @@ header .button {
 
 .mc_item_wrap:nth-of-type(1){
 	margin-left: 0;
+}
+
+.mc_item_wrap:nth-child(2) span {
+	background-position: -188px 0;
+}
+
+.mc_item_wrap:nth-child(3) span {
+	background-position: -387px 0;
+}
+
+.mc_item_wrap:nth-child(4) span {
+	background-position: -588px 0;
+}
+
+.mc_item_wrap:nth-child(5) span {
+	background-position: -790px 0;
+}
+
+.mc_item_wrap:nth-child(6) span {
+	background-position: -991px 0;
+	width: 180px;
+}
+
+.mc_wrap {
+	list-style: none;
+}
+
+.mc_item h4 {
+	font-size: 20px;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.mc_item:hover a h4,
+.mc_item_wrap.active  h4 {
+	text-decoration: underline;
+}
+
+
+.mc_item:hover, 
+.mc_item_wrap.active {
+	background-color: #2a2a2a;
+}
+
+
+.mc_item_wrap:hover .toggle,
+.mc_item_wrap.active .toggle {
+	background-color: #353535;
+}
+
+.toggle {
+	height: 26px;
+	text-align: center;
+	background-color: #212121;
+}
+
+span.arrow {
+	color: #d12f22;
+}
+
+.mc_item_wrap.active span.arrow,
+.mc_item_wrap:hover span.arrow {
+	color: white
+}
+
+.toggle:hover span.arrow {
+	color: #d12f22;
 }
