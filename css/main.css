@@ -365,6 +365,7 @@ header .button {
 
 .mc_wrap {
 	list-style: none;
+	position: relative;
 }
 
 .mc_item h4 {
@@ -408,3 +409,31 @@ span.arrow {
 .toggle:hover span.arrow {
 	color: #d12f22;
 }
+
+.mc_item_wrap > ul {
+	position: absolute;
+	width: 100%;
+}
+
+.mc_item_wrap.active > ul li {
+	float: left;
+	font-family: "BebasRegular";
+}
+
+.mc_item_wrap.active > ul {
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.mc_item_wrap.active > ul li a {
+	padding: 0 20px;
+	font-size: 20px;
+}
+
+body .mc_wrap .mc_item_wrap ul {
+	background-color: #353535;
+	margin-top: 30px;
+	text-align: center;
+}
+
